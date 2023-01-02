@@ -32,6 +32,7 @@ pipeline {
            echo $GIT_COMMIT
 	   ls
 	   pwd
+	   cd test_rb
            docker-compose build
            """
 	}
