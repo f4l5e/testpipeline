@@ -10,7 +10,7 @@ pipeline {
 		  steps {
 			withCredentials([usernamePassword(credentialsId: '2928978f-6e24-4e9d-b846-34fa23e4bca7', passwordVariable: 'GIT_PASSWORD', usernameVariable: 'GIT_USERNAME')]) {
 			    
-			    sh('git clone https://${GIT_USERNAME}:${GIT_PASSWORD}@')
+			    sh('git clone https://${GIT_USERNAME}:${GIT_PASSWORD}@gitlab.com/ShimonDarshan/test_rb')
 			    sh "ls"
 			}
 
