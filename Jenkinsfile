@@ -4,7 +4,7 @@ pipeline {
   stages{
 
     stage("build"){
-      when { branch 'testing' }
+      when { branch 'main' }
       agent { label 'TestingServer' }
       
       steps{
