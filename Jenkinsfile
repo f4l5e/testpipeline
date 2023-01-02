@@ -10,6 +10,8 @@ pipeline {
       steps{
         sh """
            echo $GIT_COMMIT
+	   ls
+	   pwd
            docker-compose build
            """
 	}
