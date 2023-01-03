@@ -8,6 +8,7 @@ pipeline {
 	
 		  
 		  steps {
+			  sh "echo $ACTION"
 			  sh "rm -rfd test_rb"
 			withCredentials([usernamePassword(credentialsId: '2928978f-6e24-4e9d-b846-34fa23e4bca7', passwordVariable: 'GIT_PASSWORD', usernameVariable: 'GIT_USERNAME')]) {
 			    
